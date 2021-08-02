@@ -24,14 +24,14 @@
       {
         "type": "color",
         "id": "colors_accent_1",
-        "default": "#445958",
+        "default": "#fb733d",
         "label": "t:settings_schema.colors.settings.colors_accent_1.label",
         "info": "t:settings_schema.colors.settings.colors_accent_1.info"
       },
       {
         "type": "color",
         "id": "colors_accent_2",
-        "default": "#9D572C",
+        "default": "#1a1a1a",
         "label": "t:settings_schema.colors.settings.colors_accent_2.label"
       },
       {
@@ -41,7 +41,7 @@
       {
         "type": "color",
         "id": "colors_text",
-        "default": "#1A1B18",
+        "default": "#191919",
         "label": "t:settings_schema.colors.settings.colors_text.label",
         "info": "t:settings_schema.colors.settings.colors_text.info"
       },

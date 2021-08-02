@@ -1,0 +1,28 @@
+.hero-area-image {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__heading {
+    font-size: 4em;
+    margin: 0;
+}
+
+.hero__text{
+    font-size: 1.5em;
+    margin: .25em 0 2em;
+    color: #999999;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .hero-area-image {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}

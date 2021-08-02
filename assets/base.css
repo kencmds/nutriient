@@ -1068,6 +1068,10 @@ deferred-media {
 /* component-button */
 /* Button - default */
 
+.button {
+  text-transform: uppercase;
+}
+
 .button,
 .shopify-challenge__button,
 .customer button {
@@ -1080,7 +1084,8 @@ deferred-media {
   padding: 0.9rem 3rem 1.1rem;
   text-decoration: none;
   border: 0;
-  border-radius: 0;
+  /*border-radius: 0;*/
+  border-radius: 28px;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
   color: rgb(var(--color-button-text));
@@ -1710,6 +1715,12 @@ input[type='checkbox'] {
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
     grid-template-columns: auto 1fr auto;
+    column-gap: 2rem;
+  }
+
+  .header--middle-center {
+    grid-template-areas: 'navigation heading icons';
+    grid-template-columns: auto auto auto;
     column-gap: 2rem;
   }
 

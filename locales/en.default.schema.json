@@ -212,6 +212,22 @@
         "name": "Apps"
       }
     },
+    "as-seen-in": {
+      "name": "As Seen In",
+      "blocks": {
+        "image": {
+          "name": "Logo",
+          "settings": {
+            "image": {
+              "label": "Image"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "As Seen In"
+      }
+    },
     "collage": {
       "name": "Collage",
       "settings": {
@@ -607,6 +623,9 @@
           },
           "options__3": {
             "label": "Top center"
+          },
+          "options__4": {
+            "label": "Middle center"
           }
         },
         "menu": {
@@ -619,6 +638,68 @@
           "label": "Enable sticky header",
           "info": "Header shows on the screen as customers scroll up."
         }
+      }
+    },
+    "hero-area": {
+      "name": "Hero Area",
+      "settings": {
+        "image": {
+          "label": "First image"
+        },
+        "color_scheme": {
+          "options__1": {
+            "label": "Accent 1"
+          },
+          "options__2": {
+            "label": "Accent 2"
+          },
+          "options__3": {
+            "label": "Background 1"
+          },
+          "options__4": {
+            "label": "Background 2"
+          },
+          "options__5": {
+            "label": "Inverse"
+          },
+          "label": "Color scheme"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Description"
+            }
+          }
+        },
+        "buttons": {
+          "name": "Buttons",
+          "settings": {
+            "button_label_1": {
+              "label": "First button label",
+              "info": "Leave the label blank to hide the button."
+            },
+            "button_link_1": {
+              "label": "First button link"
+            },
+            "button_style_secondary_1": {
+              "label": "Use outline button style"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Hero Area"
       }
     },
     "image-banner": {

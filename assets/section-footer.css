@@ -6,6 +6,12 @@
   border-top: none;
 }
 
+.footer__content-bottom {
+  color: white;
+  background-color: black;
+}
+
+
 @media screen and (max-width: 749px) {
   .footer .grid {
     display: block;
@@ -48,8 +54,7 @@
 
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.2);
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 1rem 0;
 }
 
 .footer__content-bottom:only-child {
@@ -549,3 +554,4 @@ footer details[open] summary ~ * {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
+

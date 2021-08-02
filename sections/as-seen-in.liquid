@@ -1,0 +1,53 @@
+{{ 'section-asseenin.css' | asset_url | stylesheet_tag }}
+
+<div class="section-asseenin">
+
+    <div class="asseenin-text">
+        <p>As Seen In</p>
+    </div>
+
+    {%- for block in section.blocks -%}
+
+    <div class="asseenin-logo">
+        {%- if block.settings.image != blank -%}
+          <img
+            src="{{ block.settings.image | img_url: '720x' }}"
+            alt="{{ block.settings.image.alt | escape }}"
+            loading="lazy"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+            class=""
+          >
+        {%- endif -%}
+      </div>
+ 
+  {%- endfor -%}
+
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.as-seen-in.name",
+  "tag": "section",
+  "class": "spaced-section spaced-section--full-width",
+  "blocks": [
+    {
+      "type": "image_picker",
+      "name": "t:sections.as-seen-in.blocks.image.name",
+      "limit": 6,
+      "settings": [
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.as-seen-in.blocks.image.settings.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.as-seen-in.presets.name"
+    }
+  ]
+}
+{% endschema %}
