@@ -10,7 +10,7 @@
             "type": "announcement",
             "settings": {
               "text": "FREE SHIPPING on orders over $59! - SHOP NOW!",
-              "color_scheme": "accent-1",
+              "color_scheme": "accent-2",
               "link": ""
             }
           }
@@ -26,7 +26,7 @@
         "settings": {
           "logo": "shopify:\/\/shop_images\/nutriient-logo-header.png",
           "logo_width": 100,
-          "logo_position": "top-center",
+          "logo_position": "middle-center",
           "menu": "main-menu",
           "show_line_separator": false,
           "enable_sticky_header": true
