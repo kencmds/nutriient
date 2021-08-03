@@ -218,9 +218,7 @@
         "image": {
           "name": "Logo",
           "settings": {
-            "image": {
-              "label": "Image"
-            }
+            "label": "Image"
           }
         }
       },
