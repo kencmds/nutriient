@@ -1,0 +1,54 @@
+{{ 'section-oursuperbsupplements.css' | asset_url | stylesheet_tag }}
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+
+<div class="section-oursuperbsupplements">
+    <h2>Our Superb Supplements</h2>
+    <p>Natural products to bring YOU back.</p>
+</div>
+
+
+{{ 'slick.min.js' | asset_url | script_tag }}
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('.autoplay').slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    variableWidth: true
+    });
+});
+</script>
+
+
+{% schema %}
+{
+    "name": "t:sections.our-superb-supplements.name",
+    "tag": "section",
+    "class": "spaced-section spaced-section--full-width",
+    "settings": [
+      {
+        "type": "text",
+        "id": "headline",
+        "default": "Headline",
+        "label": "t:sections.our-superb-supplements.settings.headline.label"
+      },
+      {
+        "type": "text",
+        "id": "copy",
+        "default": "Copy",
+        "label": "t:sections.our-superb-supplements.settings.copy.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.our-superb-supplements.presets.name"
+      }
+    ]
+  }
+{% endschema %}

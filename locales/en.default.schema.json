@@ -1474,6 +1474,20 @@
         "name": "Email signup"
       }
     },
+    "our-superb-supplements": {
+      "name": "Our Superb Supplements",
+      "settings": {
+        "headline": {
+          "label": "Headline"
+        },
+        "copy": {
+          "label": "Copy"
+        }
+      },
+      "presets": {
+        "name": "Our Superb Supplements"
+      }
+    },
     "page": {
       "name": "Page",
       "settings": {
