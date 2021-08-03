@@ -1631,6 +1631,35 @@
         "name": "Rich text"
       }
     },
+    "subscribe-and-save": {
+      "name": "Subscribe And Save",
+      "settings": {
+        "image": {
+          "label": "Background image"
+        }
+      },
+      "blocks": {
+        "heading": {
+          "name": "Heading",
+          "settings": {
+            "heading": {
+              "label": "Heading"
+            }
+          }
+        },
+        "text": {
+          "name": "Text",
+          "settings": {
+            "text": {
+              "label": "Description"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Subscribe And Save"
+      }
+    },
     "video": {
       "name": "Video",
       "settings": {

@@ -26,48 +26,20 @@
 
 {% schema %}
 {
-    "name": "t:sections.hero-area.name",
+    "name": "t:sections.subscribe-and-save.name",
     "tag": "section",
     "class": "spaced-section spaced-section--full-width",
     "settings": [
       {
         "type": "image_picker",
         "id": "image",
-        "label": "t:sections.hero-area.settings.image.label"
-      },
-      {
-        "type": "select",
-        "id": "color_scheme",
-        "options": [
-          {
-            "value": "accent-1",
-            "label": "t:sections.hero-area.settings.color_scheme.options__1.label"
-          },
-          {
-            "value": "accent-2",
-            "label": "t:sections.hero-area.settings.color_scheme.options__2.label"
-          },
-          {
-            "value": "background-1",
-            "label": "t:sections.hero-area.settings.color_scheme.options__3.label"
-          },
-          {
-            "value": "background-2",
-            "label": "t:sections.hero-area.settings.color_scheme.options__4.label"
-          },
-          {
-            "value": "inverse",
-            "label": "t:sections.hero-area.settings.color_scheme.options__5.label"
-          }
-        ],
-        "default": "background-1",
-        "label": "t:sections.hero-area.settings.color_scheme.label"
+        "label": "t:sections.subscribe-and-save.settings.image.label"
       }
     ],
     "blocks": [
       {
         "type": "heading",
-        "name": "t:sections.hero-area.blocks.heading.name",
+        "name": "t:sections.subscribe-and-save.blocks.heading.name",
         "limit": 1,
         "settings": [
           {
@@ -80,7 +52,7 @@
       },
       {
         "type": "text",
-        "name": "t:sections.hero-area.blocks.text.name",
+        "name": "t:sections.subscribe-and-save.blocks.text.name",
         "limit": 1,
         "settings": [
           {
@@ -90,36 +62,11 @@
             "label": "t:sections.hero-area.blocks.text.settings.text.label"
           }
         ]
-      },
-      {
-        "type": "buttons",
-        "name": "t:sections.hero-area.blocks.buttons.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "button_label_1",
-            "default": "Button label",
-            "label": "t:sections.hero-area.blocks.buttons.settings.button_label_1.label",
-            "info": "t:sections.hero-area.blocks.buttons.settings.button_label_1.info"
-          },
-          {
-            "type": "url",
-            "id": "button_link_1",
-            "label": "t:sections.hero-area.blocks.buttons.settings.button_link_1.label"
-          },
-          {
-            "type": "checkbox",
-            "id": "button_style_secondary_1",
-            "default": false,
-            "label": "t:sections.hero-area.blocks.buttons.settings.button_style_secondary_1.label"
-          }
-        ]
       }
     ],
     "presets": [
       {
-        "name": "t:sections.hero-area.presets.name",
+        "name": "t:sections.subscribe-and-save.presets.name",
         "blocks": [
           {
             "type": "heading"
