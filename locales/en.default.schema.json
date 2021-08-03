@@ -1598,24 +1598,12 @@
       "settings": {
         "image": {
           "label": "Background image"
-        }
-      },
-      "blocks": {
-        "heading": {
-          "name": "Heading",
-          "settings": {
-            "heading": {
-              "label": "Heading"
-            }
-          }
         },
-        "text": {
-          "name": "Text",
-          "settings": {
-            "text": {
-              "label": "Description"
-            }
-          }
+        "headline": {
+          "label": "Headline"
+        },
+        "copy": {
+          "label": "Copy"
         }
       },
       "presets": {

@@ -1,27 +1,23 @@
 {{ 'section-subscribeandsave.css' | asset_url | stylesheet_tag }}
 
-<div class="section-subscribeandsave">
+<div class="section-subscribeandsave" style="background-image:url({{ section.settings.image | img_url: '750x' }}); background-size: cover;">
 
-    {%- if section.settings.image != blank -%}
-        <div class="subscribeandsave__image">
-            <img 
-                src="{{ section.settings.image | img_url: '750x' }}"
-                loading="lazy"
-                alt="{{ section.settings.image.alt | escape }}"
-                width="{{ section.settings.image.width }}"
-                height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
-            >
-        </div>
+ 
+    <div class="subscribeandsave__content page-width">
 
-    {%- endif -%}
+        {%- if section.settings.headline != blank -%}
+            <h2 class="subscribeandsave__headline">
+                {{ section.settings.headline | escape }}
+            </h2>
+        {%- endif -%}
 
-  
-    <div class="subscribeandsave__content">
+        {%- if section.settings.copy != blank -%}
+            <p>
+                {{ section.settings.copy | escape }}
+            </p>
+        {%- endif -%}
           
         <div class="footer-block__newsletter">
-        {%- if section.settings.newsletter_heading != blank -%}
-            <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
-        {%- endif -%}
         {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
             <input type="hidden" name="contact[tags]" value="newsletter">
             <div class="newsletter-form__field-wrapper">
@@ -54,7 +50,7 @@
                 <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
             {%- endif -%}
             </div>
-            <button type="submit" class="button button--secondary newsletter-form__button" name="commit" id="Subscribe">
+            <button type="submit" class="button button--primary newsletter-form__button" name="commit" id="Subscribe">
             {{ 'newsletter.button_label' | t }}
             </button>
             {%- if form.posted_successfully? -%}
@@ -77,47 +73,23 @@
         "type": "image_picker",
         "id": "image",
         "label": "t:sections.subscribe-and-save.settings.image.label"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "heading",
-        "name": "t:sections.subscribe-and-save.blocks.heading.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "heading",
-            "default": "Subscribe And Save",
-            "label": "t:sections.subscribe-and-save.blocks.heading.settings.heading.label"
-          }
-        ]
       },
       {
         "type": "text",
-        "name": "t:sections.subscribe-and-save.blocks.text.name",
-        "limit": 1,
-        "settings": [
-          {
-            "type": "text",
-            "id": "text",
-            "default": "Give customers details about the banner image or content on the template.",
-            "label": "t:sections.subscribe-and-save.blocks.text.settings.text.label"
-          }
-        ]
+        "id": "headline",
+        "default": "Headline",
+        "label": "t:sections.subscribe-and-save.settings.headline.label"
+      },
+      {
+        "type": "text",
+        "id": "copy",
+        "default": "Copy",
+        "label": "t:sections.subscribe-and-save.settings.copy.label"
       }
     ],
     "presets": [
       {
-        "name": "t:sections.subscribe-and-save.presets.name",
-        "blocks": [
-          {
-            "type": "heading"
-          },
-          {
-            "type": "text"
-          }
-        ]
+        "name": "t:sections.subscribe-and-save.presets.name"
       }
     ]
   }

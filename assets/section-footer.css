@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.25rem;
 }
 
 .footer__content-bottom {
