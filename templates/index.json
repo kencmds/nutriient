@@ -79,11 +79,63 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "1627992284b229495a": {
+      "type": "as-seen-in",
+      "blocks": {
+        "99ffb726-7dda-4985-8bff-152768fd4e5e": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-menshealth.png"
+          }
+        },
+        "eb5c412a-bc3a-4734-b713-a7b02efb51db": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-gq.png"
+          }
+        },
+        "f9eac988-3e04-421c-88bc-3fafd85589e6": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-self_5f079d61-28b7-4c12-aab0-5037a087dd48.png"
+          }
+        },
+        "91937cbe-50e8-47ba-8ff7-bb0e7b663ed6": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-droz.png"
+          }
+        },
+        "cbc4fd85-b670-4e19-8c4c-2e87a8c7b886": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-womenshealth.png"
+          }
+        },
+        "8610c0c8-6aaa-4700-8b92-4ed263848b9f": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-vanityfair.png"
+          }
+        }
+      },
+      "block_order": [
+        "99ffb726-7dda-4985-8bff-152768fd4e5e",
+        "eb5c412a-bc3a-4734-b713-a7b02efb51db",
+        "f9eac988-3e04-421c-88bc-3fafd85589e6",
+        "91937cbe-50e8-47ba-8ff7-bb0e7b663ed6",
+        "cbc4fd85-b670-4e19-8c4c-2e87a8c7b886",
+        "8610c0c8-6aaa-4700-8b92-4ed263848b9f"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_products",
-    "image_text"
+    "image_text",
+    "1627992284b229495a"
   ]
 }
