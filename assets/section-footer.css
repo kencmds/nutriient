@@ -6,10 +6,24 @@
   border-top: none;
 }
 
+.footer-block--main {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+}
+
 .footer__content-bottom {
   color: white;
   background-color: black;
 }
+
+.footer__content-bottom-wrapper {
+  font-size: 0.75em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
 
 
 @media screen and (max-width: 749px) {
@@ -54,7 +68,7 @@
 
 .footer__content-bottom {
   border-top: solid 0.1rem rgba(var(--color-foreground), 0.2);
-  padding: 1rem 0;
+  padding: 1rem 0 .5rem;
 }
 
 .footer__content-bottom:only-child {
@@ -90,6 +104,7 @@
     padding-top: 1.5rem;
   }
 }
+
 .footer__column {
   width: 100%;
   align-items: flex-end;

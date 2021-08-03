@@ -513,60 +513,19 @@
     },
     "footer": {
       "name": "Footer",
-      "blocks": {
-        "link_list": {
-          "name": "Menu",
-          "settings": {
-            "heading": {
-              "label": "Heading",
-              "info": "A heading is required to display the menu."
-            },
-            "menu": {
-              "label": "Menu",
-              "info": "Displays only top-level menu items."
-            }
-          }
-        },
-        "text": {
-          "name": "Text",
-          "settings": {
-            "heading": {
-              "label": "Heading"
-            },
-            "subtext": {
-              "label": "Subtext"
-            }
-          }
-        }
-      },
       "settings": {
-        "color_scheme": {
-          "options__1": {
-            "label": "Accent 1"
-          },
-          "options__2": {
-            "label": "Accent 2"
-          },
-          "options__3": {
-            "label": "Background 1"
-          },
-          "options__4": {
-            "label": "Background 2"
-          },
-          "options__5": {
-            "label": "Inverse"
-          },
-          "label": "Color scheme"
+        "logo": {
+          "label": "Logo image"
         },
-        "newsletter_enable": {
-          "label": "Show email signup"
+        "logo_width": {
+          "unit": "px",
+          "label": "Custom logo width"
         },
-        "newsletter_heading": {
-          "label": "Heading"
+        "menu-primary": {
+          "label": "Footer Main Menu"
         },
-        "header__1": {
-          "content": "Email Signup",
-          "info": "Subscribers added to your “accepted marketing” [customer list.](https:\/\/help.shopify.com\/en\/manual\/customers\/manage-customers)"
+        "menu-secondary": {
+          "label": "Footer Auxiliary Menu"
         },
         "header__2": {
           "content": "Social media icons",
