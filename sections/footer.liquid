@@ -18,18 +18,25 @@
 
 <footer class="footer">
 
-      <div class="footer-block--main page-width">
-        {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+  <div class="footer-block--main page-width">
+
+    <div class="footer-logo-and-social">
+      {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+      <div class="footer-logo-container">
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
         <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
           src="{{ section.settings.logo | img_url: image_size }}"
           loading="lazy"
-          class="header__heading-logo"
+          class="footer__footer-logo"
           width="{{ section.settings.logo.width }}"
           height="{{ section.settings.logo.height }}"
           alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
         >
+        </a>
+      </div>
 
-        {%- if section.settings.show_social -%}
+      {%- if section.settings.show_social -%}
+        <div class="footer-social-container">
           <ul class="footer__list-social list-unstyled list-social" role="list">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item">
@@ -105,38 +112,48 @@
             {%- endif -%}
             <li class="list-social__item--placeholder">{{ 'sections.footer.social_placeholder' | t }}</li>
           </ul>
-        {%- endif -%}
-
-        {%- if section.settings.footer_menu_primary != blank -%}
-
-          <ul class="footer-block__details-content list-unstyled">
-            {%- for link in section.settings.footer_menu_primary.links -%}
-              <li>
-                <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                  {{ link.title }}
-                </a>
-              </li>
-            {%- endfor -%}
-          </ul>
-
-        {%- endif -%}
-
       </div>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.footer_menu_primary != blank -%}
+
+      <div class="footer__column footer__mainmenu">
+        <ul class="footer__mainmenu_links">
+          {%- for link in section.settings.footer_menu_primary.links -%}
+            <li>
+              <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
+                {{ link.title }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+    </div>
+
+    {%- endif -%}
+
+  </div>
 
   <div class="footer__content-bottom">
     <div class="footer__content-bottom-wrapper page-width">
+
       <div class="footer__column footer__copyright">
           <span class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</span>
           <span class="copyright__content">{{ powered_by_link }}</span>
       </div>
+
       <div class="footer__column footer__address">
-       <span>260 Cottonwood St Mount Vernon, Oregon(OR), 97865</span>
+        {%- if section.settings.address != blank -%}
+          <span>
+            {{ section.settings.address | escape }}
+          </span>
+        {%- endif -%}
       </div>
 
       {%- if section.settings.footer_menu_secondary != blank -%}
           
         <div class="footer__column footer__auxmenu">
-          <ul class="footer-block__details-content list-unstyled">
+          <ul class="footer__auxmenu_links">
             {%- for link in section.settings.footer_menu_secondary.links -%}
               <li>
                 <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
@@ -150,7 +167,9 @@
       {%- endif -%}
       
     </div>
+
   </div>
+
 </footer>
 
 {% javascript %}
@@ -252,6 +271,12 @@
       "id": "show_social",
       "default": false,
       "label": "t:sections.footer.settings.show_social.label"
+    },
+    {
+      "type": "text",
+      "id": "address",
+      "default": "Address",
+      "label": "t:sections.footer.settings.address.label"
     },
     {
       "type": "header",

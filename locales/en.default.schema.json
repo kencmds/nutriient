@@ -527,6 +527,9 @@
         "menu-secondary": {
           "label": "Footer Auxiliary Menu"
         },
+        "address": {
+          "label": "Address"
+        },
         "header__2": {
           "content": "Social media icons",
           "info": "To display your social media accounts, link them in your theme settings."
